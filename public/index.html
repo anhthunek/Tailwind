@@ -12,6 +12,14 @@
     />
     <link href="./css/tailwind.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <!-- 
     Responsive screens: 
@@ -24,7 +32,7 @@
    -->
   <body>
     <div class="pt-12">
-      <h1
+      <!-- <h1
         class="text-[#ffa400] text-center text-lg sm:text-2xl  md:text-3xl lg:text-4xl font-semibold  mb-5"
       >
         Live Anywhere
@@ -78,7 +86,32 @@
             >6,879 properties</span
           >
         </div>
+      </div> -->
+      <div class="p-5 group border border-red-600">
+        <button
+          class="inline-block text-center ml-3 py-3 px-10 text-white bg-[#6A5AF9] lg:group-hover:bg-red-400 rounded-lg transition-colors disabled:opacity-50"
+          disabled
+        >
+          Confirm
+        </button>
       </div>
+      <input
+        type="text"
+        class="p-3 m-3 border border-[red] outline-none caret-[#6A5AF9] lg:focus:border-[#6A5AF9]"
+      />
+      <input
+        type="checkbox"
+        class="appearance-none w-5 h-5 border border-[#6A5AF9] checked:bg-[#6A5AF9]"
+      />
+      <ul>
+        <li class="odd:text-[#5A6AF9]">Hello</li>
+        <li>Hello</li>
+        <li>Hello</li>
+      </ul>
+      
+    </div>
+    <div class="w-10 h-10 flex items-center justify-center mx-auto text-[#43baf6] relative before:content-[''] before:bg-transparent before:absolute before:inset-0 before:border before:border-current ">
+      <ion-icon name="camera-reverse-outline"></ion-icon>
     </div>
   </body>
 </html>
