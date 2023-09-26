@@ -3,3 +3,13 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@layer base {
+    h1 {
+        @apply text-[50px]
+    }
+    body {
+        font-family: 'Rubik', sans-serif;
+    }
+  
+}
