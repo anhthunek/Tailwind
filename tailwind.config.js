@@ -3,7 +3,8 @@ module.exports = {
   // Just-in-time mode: đỡ config nhiều, []
   mode: "jit",
   content: ["./public/**/*.{html,js}"],
-
+  // Dark mode
+  darkMode: "class",
   // config spacing, colors
   theme: {
     extend: {

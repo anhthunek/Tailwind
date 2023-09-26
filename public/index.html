@@ -31,8 +31,22 @@
     Ngoiaf ra có thể thêm config với giá trị khác
    -->
   <body>
-    <div class="pt-12">
-      <!-- <h1
+    <div
+      class="fixed bottom-10 right-10 w-[110px] h-[46px] flex items-center z-9999 bg-transparent cursor-pointer"
+    >
+      <input
+        id="checkbox"
+        type="checkbox"
+        class="appearance-none peer rounded-full w-[46px] h-[46px] checked:translate-x-[68px] checked:bg-gray-50 translate-x-0 bg-white transition-all absolute shadow-lg"
+      />
+      <label
+        for="checkbox"
+        class="w-full h-full bg-gray-200 rounded-3xl peer-checked:bg-blue-950"
+      >
+      </label>
+    </div>
+    <!-- <div class="pt-12"> -->
+    <!-- <h1
         class="text-[#ffa400] text-center text-lg sm:text-2xl  md:text-3xl lg:text-4xl font-semibold  mb-5"
       >
         Live Anywhere
@@ -87,7 +101,7 @@
           >
         </div>
       </div> -->
-      <div class="p-5 group border border-red-600">
+    <!-- <div class="p-5 group border border-red-600">
         <button
           class="inline-block text-center ml-3 py-3 px-10 text-white bg-[#6A5AF9] lg:group-hover:bg-red-400 rounded-lg transition-colors disabled:opacity-50"
           disabled
@@ -109,9 +123,44 @@
         <li>Hello</li>
       </ul>
       
-    </div>
-    <div class="w-10 h-10 flex items-center justify-center mx-auto text-[#43baf6] relative before:content-[''] before:bg-transparent before:absolute before:inset-0 before:border before:border-current ">
+    </div> -->
+    <!-- <div class="w-10 h-10 flex items-center justify-center mx-auto text-[#43baf6] relative before:content-[''] before:bg-transparent before:absolute before:inset-0 before:border before:border-current ">
       <ion-icon name="camera-reverse-outline"></ion-icon>
+    </div> -->
+
+    <div class="max-w-[1200px] mx-auto grid grid-cols-4 gap-x-5 p-5">
+      <div
+        class="border border-[#ccc] px-5 py-8 rounded-lg text-center dark:bg-[#0F0D58]"
+      >
+        <img
+          src="https://free3dicon.com/wp-content/uploads/2022/08/LGBT-264x264.png"
+          class="max-w-[100px] mx-auto mb-5"
+          alt=""
+        />
+        <div class="">
+          <h3
+            class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-[white]"
+          >
+            Recommendation
+          </h3>
+          <p
+            class="text-sm leading-loose font-normal text-[#9191B4] dark:text-[white]"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+            perferendis, qui eaque tempore eum dolores aliquam corrupti nulla
+            vero fugit. Numquam explicabo ipsum ab est! Aliquid dolorum unde ab
+            repellendus.
+          </p>
+        </div>
+      </div>
     </div>
+
+    
   </body>
+  <script>
+     
+     document.querySelector("input[type='checkbox']#checkbox").addEventListener('input', function (e) {
+      document.querySelector("html").classList.toggle("dark")
+     })
+  </script>
 </html>
